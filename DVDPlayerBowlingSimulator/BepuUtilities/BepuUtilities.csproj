@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>BepuUtilities</AssemblyName>
+    <RootNamespace>BepuUtilities</RootNamespace>
+    <TargetFramework>net5.0</TargetFramework>
+    <Version>2.4.0-beta8</Version>
+    <Company>Bepu Entertainment LLC</Company>
+    <Authors>Ross Nordby</Authors>
+    <Description>Supporting utilities library for BEPUphysics v2.</Description>
+    <Copyright>© Bepu Entertainment LLC</Copyright>
+    <PackageProjectUrl>https://github.com/bepu/bepuphysics2</PackageProjectUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/bepu/bepuphysics2</RepositoryUrl>
+    <PackageIcon>bepuphysicslogo256.png</PackageIcon>
+    <Configurations>Debug;Release</Configurations>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>    
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+    <Optimize>false</Optimize>
+    <DefineConstants>TRACE;DEBUG;CHECKMATH</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+        
+  <ItemGroup>
+    <None Include="..\Documentation\images\bepuphysicslogo256.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
