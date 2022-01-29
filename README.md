@@ -16,7 +16,7 @@
 
 ## How to use
 
-実行には[.NET5 Runtime](https://www.ipentec.com/document/windows-install-dotnet-5-desktop-runtime)が必要です。
+実行には[.NET5 Runtime](https://dotnet.microsoft.com/en-us/)が必要です。
 
 本リポジトリをクローンしてビルドたまは、この[リリースファイル](https://github.com/tomitomi3/DVDPlayerBowlingSimulator/releases/download/V1.0.0_public_release/DVDPlayerBowlingSimulator.zip)をダウンロードして展開してください。フォルダ内の **「DVDPlayerBowlingSimulator.exe」** を実行してください。
 
